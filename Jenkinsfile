@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/basellashraf/test.git'
+                git branch: 'main', url: 'https://github.com/basellashraf/test.git'
+
             }
         }
 
